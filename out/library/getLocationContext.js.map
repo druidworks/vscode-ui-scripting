@@ -1,0 +1,1 @@
+{"version":3,"file":"getLocationContext.js","sourceRoot":"","sources":["../../src/library/getLocationContext.ts"],"names":[],"mappings":";;AAAA,6BAA6B;AAG7B,SAAgB,kBAAkB,CAAC,WAAmB,EAAE,QAAkB;IACxE,IAAI,QAAQ,IAAI,QAAQ,CAAC,IAAI,EAAE;QAC7B,OAAO,IAAI,CAAC,IAAI,CAAC,QAAQ,CAAC,MAAM,CAAC,CAAC;KACnC;IACD,OAAO,WAAW,CAAC;AACrB,CAAC;AALD,gDAKC"}
