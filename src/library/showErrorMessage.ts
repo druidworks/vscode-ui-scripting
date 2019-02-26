@@ -1,5 +1,6 @@
-import * as vscode from "vscode";
+import * as vscode from 'vscode';
+import { MESSAGE_PREFIX } from '../config/constants';
 
 export function showErrorMessage(errorMessage: string) {
-  vscode.window.showErrorMessage(`VSCode UI Scripting: ${errorMessage}`);
+  vscode.window.showErrorMessage(`${MESSAGE_PREFIX}: ${errorMessage}`);
 }

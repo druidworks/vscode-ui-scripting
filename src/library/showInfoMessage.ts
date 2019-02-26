@@ -1,5 +1,6 @@
-import * as vscode from "vscode";
+import * as vscode from 'vscode';
+import { MESSAGE_PREFIX } from '../config/constants';
 
 export function showInfoMessage(message: string) {
-  vscode.window.showInformationMessage(`VSCode UI Scripting: ${message}`);
+  vscode.window.showInformationMessage(`${MESSAGE_PREFIX}: ${message}`);
 }

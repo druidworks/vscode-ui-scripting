@@ -14,10 +14,19 @@ export interface ICommand {
   questions: IQuestion[];
 }
 
+export interface IFileCommands {
+  [file: string]: string[];
+}
+
+export interface IMetaContext {
+  allowedDirectoryCommands: string[];
+  allowedFileCommands?: IFileCommands;
+}
+
 export interface IConfig {
   commands: ICommand[];
   projectRoot: string;
-  metaContext: string;
+  metaContext: IMetaContext;
   locationContext: string;
   isLocationRoot: boolean;
 }

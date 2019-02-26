@@ -4,7 +4,6 @@ import { IConfig } from "../models/config";
 
 export function getMetaContext(config: IConfig) {
   try {
-    const stats = lstatSync(config.locationContext);
     const meta = findClosestMeta(config.projectRoot, config.locationContext);
     return JSON.parse(meta);
   } catch (e) {
