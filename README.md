@@ -23,5 +23,6 @@ This VSCode plugin aims to deliver a configurable UI context toolset that will a
 - and anything else you can think of.
 
 ## Examples
+![Setup Configuration](https://github.com/druidworks/vscode-ui-scripting/blob/master/src/images/Project%20Setup.gif)
 
 ## Configuration
