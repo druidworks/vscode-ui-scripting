@@ -2,14 +2,33 @@
   "name": "vscode-ui-scripting",
   "displayName": "VSCode UI Scripting",
   "publisher": "DruidWorksStudio",
-  "description": "This extension allows us to run scripting based on inputs & configs recieved from VSCode",
+  "description": "This extension allows you to run context based scripting, capturing inputs needed to run your scripts - all within VSCode",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.31.0"
   },
+  "keywords": [
+    "Context Driven",
+    "Configurable",
+    "Script Execution"
+  ],
   "categories": [
     "Other"
   ],
+  "icon": "src/images/DruidWorks-icon.png",
+  "galleryBanner": {
+    "color": "#000019",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/druidworks/vscode-ui-scripting/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/druidworks/vscode-ui-scripting/issuess",
+    "email": "support@druidworks.studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/druidworks/vscode-ui-scripting.git"
+  },
   "activationEvents": [
     "onCommand:extension.scriptUI"
   ],

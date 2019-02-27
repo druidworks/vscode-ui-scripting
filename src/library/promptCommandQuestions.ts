@@ -23,7 +23,9 @@ export async function promptCommandQuestions(command: ICommand) {
         }
 
         const quickPickAnswer = await vscode.window.showQuickPick(question.values, questionOptions);
-        if (quickPickAnswer) {
+        if (Array.isArray(quickPickAnswer)) {
+          answer = quickPickAnswer.map(qpAnswer => qpAnswer.detail).join(',');
+        } else if (quickPickAnswer) {
           answer = quickPickAnswer.detail;
         }
       } else {

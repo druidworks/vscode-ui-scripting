@@ -1,4 +1,4 @@
-import { QuickPickItem } from "vscode";
+import { QuickPickItem } from 'vscode';
 
 export interface IQuestion {
   prompt: string;
@@ -28,5 +28,6 @@ export interface IConfig {
   projectRoot: string;
   metaContext: IMetaContext;
   locationContext: string;
+  locationContextDirectory: string;
   isLocationRoot: boolean;
 }

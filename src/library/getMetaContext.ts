@@ -1,13 +1,14 @@
-import { lstatSync, readdirSync, existsSync, readFileSync } from "fs";
-import { dirname, join } from "path";
-import { IConfig } from "../models/config";
+import { lstatSync, readdirSync, existsSync, readFileSync } from 'fs';
+import { dirname, join } from 'path';
+import { IConfig } from '../models/config';
+import { showErrorMessage } from './showErrorMessage';
 
 export function getMetaContext(config: IConfig) {
   try {
     const meta = findClosestMeta(config.projectRoot, config.locationContext);
     return JSON.parse(meta);
   } catch (e) {
-    console.log(`Error parsing meta JSON: ${e.stack}`);
+    showErrorMessage("No 'vus-meta.json' found");
   }
   return null;
 }
@@ -21,10 +22,10 @@ function findClosestMeta(root: string, path: string): any {
   } else if (stats.isDirectory()) {
     const directory = readdirSync(path);
     if (Array.isArray(directory) && directory.length > 0) {
-      const metaFile = directory.find(file => file === "vus-meta.json");
+      const metaFile = directory.find(file => file === 'vus-meta.json');
       if (metaFile && existsSync(join(path, metaFile))) {
         meta = readFileSync(join(path, metaFile), {
-          encoding: "UTF-8"
+          encoding: 'UTF-8'
         });
       } else if (path !== root) {
         const parentDirectory = dirname(path);

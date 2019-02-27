@@ -1,4 +1,18 @@
-# VSCode UI Scripting README
+```
+ .----------------.  .----------------.  .----------------.
+| .--------------. || .--------------. || .--------------. |
+| | ____   ____  | || | _____  _____ | || |    _______   | |
+| ||_  _| |_  _| | || ||_   _||_   _|| || |   /  ___  |  | |
+| |  \ \   / /   | || |  | |    | |  | || |  |  (__ \_|  | |
+| |   \ \ / /    | || |  | '    ' |  | || |   '.___`-.   | |
+| |    \ ' /     | || |   \ `--' /   | || |  |`\____) |  | |
+| |     \_/      | || |    `.__.'    | || |  |_______.'  | |
+| |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'
+```
+
+# VSCode UI Scripting
 
 This VSCode plugin aims to deliver a configurable UI context toolset that will allow quicker development within your team and projects.
 
@@ -8,6 +22,6 @@ This VSCode plugin aims to deliver a configurable UI context toolset that will a
 - Generating a large set of objects or data based off of templates.
 - and anything else you can think of.
 
-## Working on extension
+## Examples
 
-You will need to compile `npm run compile`, before running the script `F5`. - from that point on the launch script will be watching for changes.
+## Configuration

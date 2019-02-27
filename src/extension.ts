@@ -12,14 +12,14 @@ export function activate(context: vscode.ExtensionContext) {
     showInfoMessage('Loading configration...');
     const config = loadConfiguration(fileInfo);
 
-    if (config) {
+    if (config && config.metaContext) {
       const command = await promptCommand(config);
       if (command) {
         const answers = await promptCommandQuestions(command);
         console.log('answers', answers);
         const terminal = await getTerminal();
         if (terminal) {
-          terminal.sendText(`${command.command} ${answers.join(' ')}`);
+          terminal.sendText(`${command.command} ${config.locationContextDirectory} ${answers.join(' ')}`);
         }
       }
     }
