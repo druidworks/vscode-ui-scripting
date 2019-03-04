@@ -15,14 +15,14 @@
   "categories": [
     "Other"
   ],
-  "icon": "src/images/DruidWorks-icon.png",
+  "icon": "images/DruidWorks-icon.png",
   "galleryBanner": {
     "color": "#000019",
     "theme": "dark"
   },
   "homepage": "https://github.com/druidworks/vscode-ui-scripting/blob/master/README.md",
   "bugs": {
-    "url": "https://github.com/druidworks/vscode-ui-scripting/issuess",
+    "url": "https://github.com/druidworks/vscode-ui-scripting/issues",
     "email": "support@druidworks.studio"
   },
   "repository": {

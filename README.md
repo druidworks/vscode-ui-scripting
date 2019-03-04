@@ -1,17 +1,3 @@
-```
- .----------------.  .----------------.  .----------------.
-| .--------------. || .--------------. || .--------------. |
-| | ____   ____  | || | _____  _____ | || |    _______   | |
-| ||_  _| |_  _| | || ||_   _||_   _|| || |   /  ___  |  | |
-| |  \ \   / /   | || |  | |    | |  | || |  |  (__ \_|  | |
-| |   \ \ / /    | || |  | '    ' |  | || |   '.___`-.   | |
-| |    \ ' /     | || |   \ `--' /   | || |  |`\____) |  | |
-| |     \_/      | || |    `.__.'    | || |  |_______.'  | |
-| |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'
-```
-
 # VSCode UI Scripting
 
 This VSCode plugin aims to deliver a configurable UI context toolset that will allow quicker development within your team and projects.
@@ -24,7 +10,7 @@ This VSCode plugin aims to deliver a configurable UI context toolset that will a
 
 ## Examples
 
-![Setup Configuration](https://github.com/druidworks/vscode-ui-scripting/blob/master/src/images/Project%20Setup.gif)
+![Setup Configuration](/images/Project%20Setup.gif)
 
 ### Configuration
 
