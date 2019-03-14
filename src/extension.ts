@@ -6,9 +6,10 @@ import { promptCommand } from './library/promptCommand';
 import { showInfoMessage } from './library/showInfoMessage';
 import { promptCommandQuestions } from './library/promptCommandQuestions';
 import { getTerminal } from './library/getTerminal';
+import { defaultAnswers } from './library/defaultAnswers';
 
 export function activate(context: vscode.ExtensionContext) {
-  let disposable = vscode.commands.registerCommand('extension.scriptUI', async fileInfo => {
+  let disposable = vscode.commands.registerCommand('extension.scriptUI', async (fileInfo: any) => {
     showInfoMessage('Loading configration...');
     const config = loadConfiguration(fileInfo);
 
@@ -19,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
         console.log('answers', answers);
         const terminal = await getTerminal();
         if (terminal) {
-          terminal.sendText(`${command.command} ${config.locationContextDirectory} ${answers.join(' ')}`);
+          terminal.sendText(`${command.command} ${config.locationContextDirectory} ${defaultAnswers(config, answers).join(' ')}`);
         }
       }
     }
