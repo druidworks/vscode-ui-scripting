@@ -24,8 +24,11 @@ it must list the commands you will be able to use later. here you will give your
 
 With regards to the quick pick options, if you specify the values field in a question it will automatically be converted to quick pick prompt. The detail field of the values will be used when calling the command you have designated.
 
+If a user does not provide an answer for one of your questions it will default to `.`, but if you would like to specify something else, you just need to add `defaultAnswerValue` to your vus-config.json, see below. Spaces don't work so great when working with space sperated command line parameters ;)
+
 ```javascript
 {
+  "defaultAnswerValue": "-",
   "commands": [
     {
       "name": "addComponent",

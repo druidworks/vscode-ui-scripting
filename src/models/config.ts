@@ -30,4 +30,5 @@ export interface IConfig {
   locationContext: string;
   locationContextDirectory: string;
   isLocationRoot: boolean;
+  defaultAnswerValue: string;
 }

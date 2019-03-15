@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import { ICommand } from '../models/config';
 import { showInfoMessage } from './showInfoMessage';
 
-export async function promptCommandQuestions(command: ICommand) {
+export async function promptCommandQuestions(command: ICommand): Promise<(string | undefined)[]> {
   const answers = [];
 
   if (command && command.questions) {
