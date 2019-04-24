@@ -11,6 +11,7 @@ export interface IQuestion {
 export interface ICommand {
   name: string;
   command: string;
+  commandTemplate?: string;
   questions?: IQuestion[];
   inherit?: boolean;
 }

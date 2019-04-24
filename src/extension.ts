@@ -7,6 +7,7 @@ import { showInfoMessage } from './library/showInfoMessage';
 import { promptCommandQuestions } from './library/promptCommandQuestions';
 import { getTerminal } from './library/getTerminal';
 import { defaultAnswers } from './library/defaultAnswers';
+import { prepareCommandText } from './library/prepareCommandText';
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand('extension.scriptUI', async (fileInfo: any) => {
@@ -19,7 +20,10 @@ export function activate(context: vscode.ExtensionContext) {
         const answers = await promptCommandQuestions(command);
         const terminal = await getTerminal();
         if (terminal) {
-          terminal.sendText(`${command.command} ${config.locationContextDirectory} ${defaultAnswers(config, answers).join(' ')}`);
+          const terminalText = prepareCommandText(config, command, answers);
+          if (terminalText) {
+            terminal.sendText(terminalText);
+          }
         }
       }
     }
