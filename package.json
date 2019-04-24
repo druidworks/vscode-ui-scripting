@@ -3,7 +3,7 @@
   "displayName": "VSCode UI Scripting",
   "publisher": "DruidWorksStudio",
   "description": "This extension allows you to run context based scripting, capturing inputs needed to run your scripts - all within VSCode",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.31.0"
   },
