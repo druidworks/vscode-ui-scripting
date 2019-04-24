@@ -17,7 +17,6 @@ export function activate(context: vscode.ExtensionContext) {
       const command = await promptCommand(config);
       if (command) {
         const answers = await promptCommandQuestions(command);
-        console.log('answers', answers);
         const terminal = await getTerminal();
         if (terminal) {
           terminal.sendText(`${command.command} ${config.locationContextDirectory} ${defaultAnswers(config, answers).join(' ')}`);
