@@ -10,7 +10,7 @@ This VSCode plugin aims to deliver a configurable UI context toolset that will a
 
 ## Examples
 
-![Setup Configuration](/images/Project%20Setup.gif)
+![Setup Configuration](images/Project%20Setup.gif)
 
 ### Configuration
 
