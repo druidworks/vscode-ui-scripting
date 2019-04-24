@@ -2,6 +2,7 @@ import * as vscode from 'vscode';
 import { basename } from 'path';
 import { IConfig, ICommand } from '../models/config';
 import { showInfoMessage } from './showInfoMessage';
+import { showErrorMessage } from './showErrorMessage';
 
 export async function promptCommand(config: IConfig): Promise<ICommand> {
   const commandNames = [];
@@ -35,6 +36,8 @@ export async function promptCommand(config: IConfig): Promise<ICommand> {
   } else if (commandNames.length === 1) {
     commandName = commandNames[0];
     showInfoMessage(`'${commandName}' command initializing...`);
+  } else {
+    showErrorMessage('No inheritable commands found');
   }
 
   return commandName ? commandDictionary[commandName] : null;

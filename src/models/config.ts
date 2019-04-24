@@ -11,7 +11,8 @@ export interface IQuestion {
 export interface ICommand {
   name: string;
   command: string;
-  questions: IQuestion[];
+  questions?: IQuestion[];
+  inherit?: boolean;
 }
 
 export interface IFileCommands {
@@ -21,6 +22,7 @@ export interface IFileCommands {
 export interface IMetaContext {
   allowedDirectoryCommands: string[];
   allowedFileCommands?: IFileCommands;
+  inherit?: boolean;
 }
 
 export interface IConfig {
