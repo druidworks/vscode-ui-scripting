@@ -12,6 +12,9 @@ This VSCode plugin aims to deliver a configurable UI context toolset that will a
 
 ![Setup Configuration](images/Project%20Setup.gif)
 
+You can also find a demo project that has implemented the vscode configs here:
+https://github.com/druidworks/vscode-ui-scripting-example
+
 ### Configuration
 
 You need to create a `vus-config.json` file in the root of the project.
